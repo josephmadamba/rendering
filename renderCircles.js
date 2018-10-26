@@ -14,19 +14,19 @@ function circles() {
 
     var circlesAbstraction = [
         {
-            radius: 50,
+            radius: '50px',
             color: "#FF00FF"
         },
         {
-            radius: 30,
+            radius: '30px',
             color: "#FF99AA"
         },
         {
-            radius: 60,
+            radius: '60px',
             color: "#0000FF"
         },
         {
-            radius: 10,
+            radius: '10px',
             color: "#000000"
         },
     ];
