@@ -1,17 +1,30 @@
 
+function makeSingleCircle (circle) {
+    return `<div class="circle" style="width:${circle.radius};
+    height:${circle.radius};
+    background:${circle.color};
+    border-radius:50%">
+</div>`
+}
+
 function renderCircles(circles) {
-    // HINT: You probably need to write a for loop!
-    //       Or, if you're feeling fancy, use .map() 
-    return `
-        <div class="text-center mt-5">
-            <code>${JSON.stringify(circles)}</code>
-        </div>
-    `
+    return circles.map(makeSingleCircle).join('')
+
+
+    // var i;
+    // var htmlString = ""
+    // for (i = 0; i < circles.length; i++) { 
+    //   htmlString += `<div class="circle" style="width:${circles[i].radius};
+    //                                             height:${circles[i].radius};
+    //                                             background:${circles[i].color};
+    //                                             border-radius:50%">
+    //                 </div>`
+    // }
+    // return htmlString;
 }
 
 function circles() {
-    var content = document.getElementById('content');
-
+    var content = document.getElementById('content');    
     var circlesAbstraction = [
         {
             radius: '50px',
